@@ -1,0 +1,137 @@
+
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Tribù Elio Chair",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(5).png",
+      "price": "1200",
+      "description": "A sleek outdoor chair with natural wooden elements and a modern look.",
+      "discountPercentage": 10,
+      "isFeaturedProduct": true,
+      "stockLevel": 25,
+      "category": "Chair"
+    },
+    {
+      "id": "2",
+      "name": "Armchair Tortuga",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(35).png",
+      "price": "850",
+      "description": "An elegant armchair with plush cushions and a curved design for comfort.",
+      "discountPercentage": 0,
+      "isFeaturedProduct": false,
+      "stockLevel": 10,
+      "category": "Chair"
+    },
+    {
+      "id": "3",
+      "name": "Uchiwa Quilted Lounge Chair",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(6).png",
+      "price": "1600",
+      "description": "A spacious lounge chair with a quilted back and soft cushioning.",
+      "discountPercentage": 20,
+      "isFeaturedProduct": true,
+      "stockLevel": 5,
+      "category": "Chair"
+    },
+    {
+      "id": "4",
+      "name": "Mint Blue Velvet Armchair",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(3).png",
+      "price": "780",
+      "description": "A luxurious armchair with velvet fabric and golden metal legs.",
+      "discountPercentage": 0,
+      "isFeaturedProduct": false,
+      "stockLevel": 12,
+      "category": "Sofa"
+    },
+    {
+      "id": "5",
+      "name": "Hans Wegner Style Shell Chair",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(4).png",
+      "price": "990",
+      "description": "Iconic three-legged chair with faux leather and ash plywood frame.",
+      "discountPercentage": 10,
+      "isFeaturedProduct": false,
+      "stockLevel": 8,
+      "category": "Chair"
+    },
+    {
+      "id": "6",
+      "name": "Rapson Thirty-Nine Guest Chair",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(7).png",
+      "price": "1300",
+      "description": "A mid-century modern chair with clean lines and durable materials.",
+      "discountPercentage": 15,
+      "isFeaturedProduct": true,
+      "stockLevel": 20,
+      "category": "Chair"
+    },
+    {
+      "id": "7",
+      "name": "Nautilus Lounge Chair",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(8).png",
+      "price": "1450",
+      "description": "A lounge chair with a shell-inspired design and premium upholstery.",
+      "discountPercentage": 12,
+      "isFeaturedProduct": true,
+      "stockLevel": 10,
+      "category": "Chair"
+    },
+    {
+      "id": "8",
+      "name": "Modern Customized Plastic Chair",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(9).png",
+      "price": "150",
+      "description": "A simple and lightweight chair ideal for dining or casual use.",
+      "discountPercentage": 0,
+      "isFeaturedProduct": false,
+      "stockLevel": 50,
+      "category": "Chair"
+    },
+    {
+      "id": "9",
+      "name": "Cozy Armchair",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(10).png",
+      "price": "520",
+      "description": "Compact armchair with a cozy design for small spaces.",
+      "discountPercentage": 8,
+      "isFeaturedProduct": false,
+      "stockLevel": 15,
+      "category": "Chair"
+    },
+    {
+      "id": "10",
+      "name": "Alpha Chair–Solid Ebonised Oak",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(11).png",
+      "price": "900",
+      "description": "A sturdy oak chair with a sleek and minimalist design.",
+      "discountPercentage": 10,
+      "isFeaturedProduct": false,
+      "stockLevel": 18,
+      "category": "Chair"
+    },
+    {
+      "id": "11",
+      "name": "Replica Wegner Wishbone Chair",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(12).png",
+      "price": "750",
+      "description": "Classic wishbone chair with a dark walnut frame and cord seat.",
+      "discountPercentage": 10,
+      "isFeaturedProduct": false,
+      "stockLevel": 25,
+      "category": "Chair"
+    },
+    {
+      "id": "12",
+      "name": "Futuristic Sleek Modern Chair",
+      "imagePath": "https://next-ecommerce-template-4.vercel.app/product/Chair%20(14).png",
+      "price": "2000",
+      "description": "A modern chair with a carbon fiber frame and bold red accents.",
+      "discountPercentage": 0,
+      "isFeaturedProduct": true,
+      "stockLevel": 3,
+      "category": "Chair"
+    }
+  ]
+}
