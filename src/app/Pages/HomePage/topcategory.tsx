@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { Product } from '../../../../type/products';
 import { client } from '@/sanity/lib/client';

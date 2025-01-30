@@ -62,15 +62,13 @@ const FilterSection = ({ onFiltersChange }: FilterSectionProps) => {
         <div key={id} className="mb-6">
           <p className="text-[20px] font-semibold mb-2">{title}</p>
           <div className="gap-3">
-            {options.map((option: any) => {
-              // Format discounts and price ranges for display
+              {options.map((option) => {
               const displayValue =
                 id === "discountPercentage"
                   ? `${option}% Discount`
                   : id === "priceRange"
-                  ? `$${option.replace("-", " to $")}`
-                  : option;
-
+                  ? `$${String(option).replace("-", " to $")}`
+                  : String(option);
               return (
                 <label key={option} className="flex items-center gap-2 text-[20px] cursor-pointer group">
                   <input

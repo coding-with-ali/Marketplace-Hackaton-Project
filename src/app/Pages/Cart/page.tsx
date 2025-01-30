@@ -12,13 +12,13 @@ interface CartItem {
   _id: string;
   name: string;
   price: number;
-  image: any;
+  image: string;
   quantity: number;
 }
 
 const Cart: React.FC = () => {
   const dispatch = useDispatch();
-  const cartItems = useSelector((state: RootState) => state.cart);
+  const cartItems: CartItem[] = useSelector((state: RootState) => state.cart);
 
   // Handles quantity changes with boundary check for positive quantity
   const handleQuantityChange = (_id: string, quantity: number) => {
