@@ -128,11 +128,14 @@ const Cart: React.FC = () => {
               <p>${subtotal.toFixed(2)}</p>
             </div>
             <Link
-              href="/Pages/Order"
-              className="block bg-green-500 text-white px-4 py-2 rounded mt-4 w-full text-center hover:bg-green-600"
-            >
-              Proceed to Checkout
-            </Link>
+        href={{
+          pathname: '/checkout',
+          query: { cart: JSON.stringify(cartItems) },
+        }}
+        className="block bg-green-500 text-white px-4 py-2 rounded mt-4 w-full text-center hover:bg-green-600"
+      >
+        Proceed to Checkout
+      </Link>
           </div>
         </div>
       </div>
@@ -141,3 +144,4 @@ const Cart: React.FC = () => {
 };
 
 export default Cart;
+

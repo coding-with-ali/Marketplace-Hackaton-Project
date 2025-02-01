@@ -1,5 +1,6 @@
 
 export interface Product{
+    quantity: number;
     _id : string;
     name : string;
     _type : "product";
@@ -12,4 +13,6 @@ export interface Product{
     };
     discountPercentage: number;
     category: string;
+    stock: number;
+    reviews: [];
 }

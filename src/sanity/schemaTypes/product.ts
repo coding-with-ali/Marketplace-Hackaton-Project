@@ -52,6 +52,35 @@ export const product ={
       validation: (Rule: RuleType) => Rule.min(0).error('Stock level must be a positive number.'),
     },
     {
+      name: 'reviews',
+      type: 'array',
+      title: 'Reviews',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'name',
+              type: 'string',
+              title: 'Reviewer Name',
+              validation: (Rule: RuleType) => Rule.required(),
+            },
+            {
+              name: 'rating',
+              type: 'number',
+              title: 'Rating',
+              validation: (Rule: RuleType) => Rule.min(1).max(5).required(),
+            },
+            {
+              name: 'description',
+              type: 'text',
+              title: 'Review Description',
+            },
+          ],
+        },
+      ],
+    },
+    {
       name: 'category',
       type: 'string',
       title: 'Category',

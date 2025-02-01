@@ -57,23 +57,23 @@ export default function SearchPageContent() {
     setLoading(false);
   };
 
-  const handleAddToCart = (product: Product) => {
-    dispatch(add(product));
-    setCartItems((prev) => ({ ...prev, [product._id]: true }));
-  };
+    const handleAddToCart = (product: Product) => {
+      dispatch(add(product));
+      setCartItems((prev) => ({ ...prev, [product._id]: true }));
+    };
 
-  const handleQuantityChange = (productId: string, newQuantity: number) => {
-    if (newQuantity > 0) {
-      setProducts((prevProducts) =>
-        prevProducts.map((product) =>
-          product._id === productId
-            ? { ...product, quantity: newQuantity }
-            : product
-        )
-      );
-      dispatch(updateQuantity({ _id: productId, quantity: newQuantity }));
-    }
-  };
+    const handleQuantityChange = (productId: string, newQuantity: number) => {
+      if (newQuantity > 0) {
+        setProducts((prevProducts) =>
+          prevProducts.map((product) =>
+            product._id === productId
+              ? { ...product, quantity: newQuantity }
+              : product
+          )
+        );
+        dispatch(updateQuantity({ _id: productId, quantity: newQuantity }));
+      }
+    };
 
   return (
     <div className="p-6">

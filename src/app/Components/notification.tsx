@@ -7,7 +7,7 @@ function Notification({
   product,
   onAddToCart,
 }: {
-  product: { _id: string; name: string; quantity: number };
+  product: { _id: string; name: string; quantity: number, image:string };
   onAddToCart: () => void;
 }) {
   const handleAdd = () => {
