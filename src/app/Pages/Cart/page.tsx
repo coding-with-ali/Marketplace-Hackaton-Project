@@ -129,7 +129,7 @@ const Cart: React.FC = () => {
             </div>
             <Link
         href={{
-          pathname: '/checkout',
+          pathname: '/Pages/Checkout',
           query: { cart: JSON.stringify(cartItems) },
         }}
         className="block bg-green-500 text-white px-4 py-2 rounded mt-4 w-full text-center hover:bg-green-600"
