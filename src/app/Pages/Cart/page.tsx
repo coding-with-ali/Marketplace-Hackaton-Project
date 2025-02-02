@@ -7,6 +7,7 @@ import { RootState } from "../../redux/store";
 import Image from "next/image";
 import Link from "next/link";
 import { urlFor } from "@/sanity/lib/image";
+import {useRouter} from "next/navigation";
 
 interface CartItem {
   _id: string;
@@ -19,6 +20,7 @@ interface CartItem {
 const Cart: React.FC = () => {
   const dispatch = useDispatch();
   const cartItems: CartItem[] = useSelector((state: RootState) => state.cart);
+  const router = useRouter();
 
   // Handles quantity changes with boundary check for positive quantity
   const handleQuantityChange = (_id: string, quantity: number) => {
@@ -37,6 +39,12 @@ const Cart: React.FC = () => {
     (acc, product) => acc + (product.price || 0) * (product.quantity || 1),
     0
   );
+
+  
+  const handleProceedToCheckout = () => {
+    sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
+    router.push("/Pages/Checkout");
+  };
 
   return (
     <div>
@@ -127,15 +135,12 @@ const Cart: React.FC = () => {
               <p>Subtotal:</p>
               <p>${subtotal.toFixed(2)}</p>
             </div>
-            <Link
-        href={{
-          pathname: '/Pages/Checkout',
-          query: { cart: JSON.stringify(cartItems) },
-        }}
-        className="block bg-green-500 text-white px-4 py-2 rounded mt-4 w-full text-center hover:bg-green-600"
-      >
-        Proceed to Checkout
-      </Link>
+            <button
+  onClick={handleProceedToCheckout}
+  className="block bg-green-500 text-white px-4 py-2 rounded mt-4 w-full text-center hover:bg-green-600"
+>
+  Proceed to Checkout
+</button>
           </div>
         </div>
       </div>
@@ -144,4 +149,6 @@ const Cart: React.FC = () => {
 };
 
 export default Cart;
+
+
 
