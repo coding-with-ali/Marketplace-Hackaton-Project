@@ -5,9 +5,8 @@ import Link from "next/link";
 import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { LuPhoneCall } from "react-icons/lu";
-import { CiHeart } from "react-icons/ci";
-import { GrUserManager } from "react-icons/gr";
-import { BsCart2 } from "react-icons/bs";
+import { FaCartPlus } from "react-icons/fa";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,23 +47,26 @@ export default function Header() {
           </div>
         </div>
         <div className="flex justify-between items-center gap-4 lg:gap-8">
+          <div>
+            <Link href="https://marketplace-hackaton-admin-pannel.vercel.app/">Admin Pannel</Link>
+          </div>
           <select name="" id="" className="bg-[#7E33E0]">
             <option value="">English</option>
           </select>
           <select name="" id="" className="bg-[#7E33E0]">
             <option value="">USD</option>
           </select>
-          <div className="flex justify-between items-center gap-1 lg:gap-2">
-            <Link href="/login">Login</Link>
-            <GrUserManager size="16px" />
-          </div>
-          <div className="flex justify-between items-center gap-1 lg:gap-2">
-            <Link href="">Wishlist</Link>
-            <CiHeart size="16px" />
-          </div>
           <Link href="/Pages/Cart">
-            <BsCart2 size="16px" />
+            <FaCartPlus size="24px" />
           </Link>
+          <div className="flex justify-between items-center gap-1 lg:gap-2">
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+            <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          </div>
         </div>
       </div>
       {/* Navbar */}
