@@ -453,8 +453,8 @@ const CheckoutPage = () => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [phone, setPhone] = useState(""); // ✅ Phone Added
-  const [state, setState] = useState(""); // ✅ State Added
+  const [phone, setPhone] = useState("");
+  const [state, setState] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [postalCode, setPostalCode] = useState("");
@@ -485,8 +485,8 @@ const CheckoutPage = () => {
     const orderData = {
       customerName: `${firstName} ${lastName}`,
       email,
-      phone,  // ✅ Phone Added
-      state,  // ✅ State Added
+      phone, 
+      state,  
       address,
       city,
       postalCode,
